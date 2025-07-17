@@ -24,7 +24,7 @@ spotify_to_ytmusic (Added Support for Deleted/Corruped Songs)
 
 |pypi-downloads| |discuss| |code-coverage| |latest-release| |commits-since-latest|
 
-#This is a FORK from sigma67 pls make sure to check out the original project(https://github.com/sigma67/spotify_to_ytmusic).
+# This is a FORK from sigma67 pls make sure to check out the original project(https://github.com/sigma67/spotify_to_ytmusic).
 
 A simple command line script to clone a Spotify playlist to YouTube Music.
 
