@@ -108,10 +108,10 @@ def build_results(tracks, album=None):
             track = track["track"]
         if not track or track["duration_ms"] == 0:
             continue
-        album_name = album if album else track["album"]["name"]
+        album_name = album if album else track.get("album", {}).get("name", "Unknown Album")
         results.append(
             {
-                "artist": " ".join([artist["name"] for artist in track["artists"]]),
+                "artist": " ".join([artist["name"] for artist in track.get("artists", [{"name": "Unknown Artist"}])]),
                 "name": track["name"],
                 "album": album_name,
                 "duration": track["duration_ms"] / 1000,
